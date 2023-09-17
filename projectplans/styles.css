@@ -43,6 +43,10 @@ body {
   color: #131313;
   font-size: 1.44em;
 }
+.sidebar .tag{
+  border: none;
+  background-color: unset;
+}
 .account {
   margin-top: 16px;
 }
