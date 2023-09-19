@@ -43,6 +43,28 @@ body {
   color: #131313;
   font-size: 1.44em;
 }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 .account {
   margin-top: 16px;
 }
@@ -143,6 +165,41 @@ body {
   padding: 19px;
   border-radius: 6px;
 }
+
+/* ================ */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* CSS cho nút drop-down khi được nhấp vào */
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* CSS cho nội dung của nút drop-down */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* CSS cho các mục trong nút drop-down */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* CSS cho mục khi di chuột qua */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* =================== */
 .header-right .email {
   background-color: #f3f6fd;
   padding: 6px 12px;
