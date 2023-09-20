@@ -1,3 +1,4 @@
+//tao tag///////
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   
@@ -7,7 +8,9 @@ function openNav() {
 // {
 //     document.getElementById("mySidenav").style.width = "0px";
 // }
+/////end tag
 
+//       tao the view
 let body = document.querySelector("body");
 
 body.addEventListener("dblclick", function () {
@@ -35,3 +38,4 @@ function closeBlock() {
   var block = document.getElementById("block");
   block.classList.add("hidden");
 }
+// end view

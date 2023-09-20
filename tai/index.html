@@ -59,6 +59,10 @@
           <a href="#">Services</a>
           <a href="#">Clients</a>
           <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
         <div class="sidebar-nav bin">
           <i class="fa-regular fa-trash-can"></i> Bin
@@ -159,8 +163,8 @@
                     <button class="dropbtn" style="border: none; background-color: unset;"><i
                         class="fa-solid fa-ellipsis"></i></button>
                     <div class="dropdown-content">
-                      <a href="#">Mục 1</a>
-                      <a href="#">Mục 2</a>
+                      <a href="#" onclick="viewInfo()">View</a>
+                      <a href="#">Edit</a>
                       <a href="#">Delete</a>
                     </div>
                   </div>
@@ -199,8 +203,8 @@
                     <button class="dropbtn" style="border: none; background-color: unset;"><i
                         class="fa-solid fa-ellipsis"></i></button>
                     <div class="dropdown-content">
-                      <a href="#">Mục 1</a>
-                      <a href="#">Mục 2</a>
+                      <a href="#" onclick="viewInfo()">View</a>
+                      <a href="#">Edit</a>
                       <a href="#">Delete</a>
                     </div>
                   </div>
@@ -238,8 +242,8 @@
                     <button class="dropbtn" style="border: none; background-color: unset;"><i
                         class="fa-solid fa-ellipsis"></i></button>
                     <div class="dropdown-content">
-                      <a href="#">Mục 1</a>
-                      <a href="#">Mục 2</a>
+                      <a href="#" onclick="viewInfo()">View</a>
+                      <a href="#">Edit</a>
                       <a href="#">Delete</a>
                     </div>
                   </div>
@@ -268,6 +272,10 @@
           </div>
         </div>
       </div>
+      <div id="block" class="hidden">
+        <a href="#" onclick="closeBlock()"><i class="fas fa-times"></i></a>
+        <p></p>
+    </div>
       <!-- footer -->
       <div id="footer">
         <div class="footer-content">
@@ -310,6 +318,26 @@
     </form>
   </div>
   <!-- End delete -->
+  <!-- start edit -->
+  <div id="id03" class="edit">
+    <span onclick="document.getElementById('id03').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="edit-content">
+      <div class="edit_container">
+        <h5 style="padding-right: 350px;">Weekly Planner</h5>
+
+        <hr>
+        <textarea id="noiDung" class="form-control" aria-label="With textarea"></textarea>
+        <div class="edit_clearfix">
+          <button type="button" class="cancel_btn">Cancel</button>
+          <button type="button" class="save_btn">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- end edit -->
   <script src="./index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
