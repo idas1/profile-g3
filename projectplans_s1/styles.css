@@ -43,7 +43,7 @@ body {
   color: #131313;
   font-size: 1.44em;
 }
-
+/* ---------------tag dung-------------------- */
 .sidenav {
   height: 100%;
   width: 0;
@@ -51,10 +51,12 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  box-shadow: 0 0 40px;
+  transition: 0.75s ease-in-out;
 }
 
 .sidenav a {
@@ -65,6 +67,7 @@ body {
   display: block;
   transition: 0.3s;
 }
+/* --------------------------end tag dung--------------- */
 .account {
   margin-top: 16px;
 }
@@ -199,19 +202,43 @@ body {
   background-color: #ddd;
 }
 
+/* Định dạng cho block----dung----- */
+#block {
+  width: 400px;
+  /* height: 100px; */
+  background-color: rgb(246, 245, 245);
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  /* display: none; */
+  text-align: center;
+  padding: 50px 10px;
+  z-index: 999;
+  transition: transform .2s ease-out;
+  box-shadow: 0 0 15px;
+  border-radius: 31px;
+}
+
+/* Định dạng cho lớp CSS để ẩn block */
+.hidden {
+  display: none;
+}
 /* =================== */
+
 .header-right .email {
   background-color: #f3f6fd;
   padding: 6px 12px;
   border-radius: 6px;
   margin-right: 10px;
-  position: relative;
+  /* position: relative; */
+ 
 }
 .header-right .bell {
   background-color: #f3f6fd;
   padding: 6px 12px;
   border-radius: 6px;
-  position: relative;
+  /* position: relative; */
+ 
 }
 .header-right.email::after,
 .header-right.bell::after {
@@ -325,14 +352,14 @@ tbody, td, tfoot, th, thead, tr {
   border-radius: 6px;
   margin-right: 10px;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 .main-right .large {
   background-color: #f3f6fd;
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 .main-info {
   padding: 5px;
