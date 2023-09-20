@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Content</title>
+</head>
+
+<body>
+    <div id="card">
+        <!-- Nội dung ban đầu của thẻ -->
+        <p id="card-content">Nội dung thẻ của bạn</p>
+        <button id="edit-button">Edit</button>
+    </div>
+
+    <script>
+        // Lấy tham chiếu đến các phần tử DOM
+        const card = document.getElementById('card');
+        const cardContent = document.getElementById('card-content');
+        const editButton = document.getElementById('edit-button');
+
+        // Đặt sự kiện click cho nút "Edit"
+        editButton.addEventListener('click', () => {
+            // Sử dụng prompt để nhập chuỗi mới
+            const newContent = prompt('Nhập nội dung mới:');
+
+            // Kiểm tra xem người dùng đã nhập hay chưa và cập nhật nếu có
+            if (newContent !== null) {
+                cardContent.textContent = newContent;
+            }
+        });
+    </script>
+</body>
+
+</html>
